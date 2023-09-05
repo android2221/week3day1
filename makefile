@@ -15,7 +15,7 @@ CPPFLAGS += -isystem
 # Flags passed to the C++ compiler.
 CXXFLAGS += --std=c++1414 -g -Wall -Wextra -pthread
 
-INPUT = src/main.cpp
+INPUT = src/main.cpp src/Student.cpp
 
 
 # House-keeping build targets.
