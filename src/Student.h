@@ -2,17 +2,27 @@
 #include <string>
 
 class Student{
-    // Constructor
     public:
-        explicit Student(int sId, 
+        //Constructor
+        explicit Student(int studentId, 
             int phoneNum, 
             char gender, 
             std::string fName, 
             std::string lName, 
             std::string address);
+        
+        // Getters
+        int getStudentId();
+        int getPhoneNumber();
+        std::string getFullName();
+
+        // Setters
+        void setPhoneNum(int phoneNum);
+        void setFName(std::string fName);
+        void setLName(std::string lName);
 
     private:
-        int sId = 0;
+        int studentId = 0;
         int phoneNum = 0;
         char gender;
         std::string fName;
