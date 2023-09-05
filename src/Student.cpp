@@ -1,13 +1,6 @@
-#include "Student.h"
 #include <string>
 #include <iostream>
-
-int studentId = 0;
-int phoneNum = 0;
-char gender;
-std::string fName;
-std::string lName;
-std::string address;
+#include "Student.h"
 
 Student::Student(
         int inStudentId, 
@@ -37,15 +30,15 @@ void Student::setLName(std::string inLName){
     lName = inLName;
 }
 
-int getStudentId(){
+int Student::getStudentId(){
     return studentId;
 }
 
-int getPhoneNumber(){
+int Student::getPhoneNumber(){
     return phoneNum;
 }
 
-std::string getFullName(){
+std::string Student::getFullName(){
     return fName + " " + lName;
 }
 
