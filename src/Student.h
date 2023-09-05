@@ -4,12 +4,12 @@
 class Student{
     public:
         //Constructor
-        explicit Student(int studentId, 
-            int phoneNum, 
-            char gender, 
-            std::string fName, 
-            std::string lName, 
-            std::string address);
+        explicit Student(int inStudentId, 
+            int inPhoneNum, 
+            char inGender, 
+            std::string inFName, 
+            std::string inLName, 
+            std::string inAddress);
         
         // Getters
         int getStudentId();
@@ -17,16 +17,15 @@ class Student{
         std::string getFullName();
 
         // Setters
-        void setPhoneNum(int phoneNum);
-        void setFName(std::string fName);
-        void setLName(std::string lName);
+        void setPhoneNum(int inPhoneNum);
+        void setFName(std::string inFName);
+        void setLName(std::string inLName);
 
     private:
-        int studentId = 0;
-        int phoneNum = 0;
+        int studentId;
+        int phoneNum;
         char gender;
         std::string fName;
         std::string lName;
         std::string address;
-
 };
